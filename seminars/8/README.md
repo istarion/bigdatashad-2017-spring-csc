@@ -94,16 +94,16 @@
 
 4. Для получения информации о работе Kafka cli необходимо запустить команду:
 
-        $kafka-topics --zookeeper hadoop2-10:2181
+        $ kafka-topics --zookeeper hadoop2-10:2181
     Для получения информации о списке доступных  топиков необходимо выполнить команду
 
-        $kafka-topics --zookeeper hadoop2-10:2181 --list
+        $ kafka-topics --zookeeper hadoop2-10:2181 --list
     Для получения информации о конкретном топике необходимо выполнить команду
 
-        $kafka-topics --zookeeper hadoop2-10:2181 --describe bigdatashad-2016
+        $ kafka-topics --zookeeper hadoop2-10:2181 --describe bigdatashad-2016
     Для просмотра содержимого топика в stdout необходимо выполнить команду
 
-        $kafka-console-consumer --zookeeper hadoop2-10:2181 --topic bigdatashad-2016
+        $ kafka-console-consumer --zookeeper hadoop2-10:2181 --topic bigdatashad-2016
     После выполнения данной команды на экран будут выводится сообщения из указанного топика до момента, пока вы не нажмёте Ctrl+C.
 
 5. Для обработки сообщений из топика Kafka в приложениях SparkStreaming необходимо создать стрим поверх сообщений Kafka. Для этого необходимо:
